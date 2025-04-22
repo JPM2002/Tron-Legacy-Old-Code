@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1be0d0e3-6667-474c-b7e2-ed9f0f0ce275" name="Changes" comment="" />
+    <list default="true" id="1be0d0e3-6667-474c-b7e2-ed9f0f0ce275" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tron-Legacy-Old-Code.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../V0/V0.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../V0/src/Music/Tron_Game.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Music/Tron_Game.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/GameConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/GameWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/SpeedSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../V0/src/Music/Tron.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main,java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,16 +39,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2Ny7L7j3CJNCq9nKDFl1jowwN8O" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Javie/Documents/GitHub/Tron-Legacy-Old-Code/V1",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Javie/Documents/GitHub/Tron-Legacy-Old-Code",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,11 +104,27 @@
       <workItem from="1738354665940" duration="169000" />
       <workItem from="1738368488695" duration="312000" />
       <workItem from="1745307886964" duration="74000" />
-      <workItem from="1745308075286" duration="753000" />
+      <workItem from="1745308075286" duration="1145000" />
+      <workItem from="1745310568875" duration="40000" />
+      <workItem from="1745310615001" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
