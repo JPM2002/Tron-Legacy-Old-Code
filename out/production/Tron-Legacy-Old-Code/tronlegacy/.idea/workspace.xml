@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1be0d0e3-6667-474c-b7e2-ed9f0f0ce275" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tron-Legacy-Old-Code.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../V0/V0.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../V0/src/Music/Tron_Game.mp3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Music/Tron.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Music/Tron_Game.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core/GameConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core/GamePanel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ui/GameWindow.java" afterDir="false" />
@@ -45,6 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Javie/Documents/GitHub/Tron-Legacy-Old-Code",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,6 +105,8 @@
       <workItem from="1738368488695" duration="312000" />
       <workItem from="1745307886964" duration="74000" />
       <workItem from="1745308075286" duration="1145000" />
+      <workItem from="1745310568875" duration="40000" />
+      <workItem from="1745310615001" duration="27000" />
     </task>
     <servers />
   </component>

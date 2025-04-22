@@ -8,6 +8,8 @@ import java.awt.event.*;
 
 public class SpeedSelector extends JFrame implements ActionListener {
     private final JComboBox<String> comboBox;
+    private final JComboBox<String> modeBox;
+
 
     public SpeedSelector() {
         setTitle("Select Speed");
@@ -37,10 +39,24 @@ public class SpeedSelector extends JFrame implements ActionListener {
         comboBox.setBorder(BorderFactory.createLineBorder(Color.CYAN, 2));
         comboBox.addActionListener(this);
 
+
+        String[] modes = {"Classic", "Power-Ups", "AI Bot"};
+        modeBox = new JComboBox<>(modes);
+        modeBox.setFont(new Font("Consolas", Font.BOLD, 22));
+        modeBox.setBackground(Color.BLACK);
+        modeBox.setForeground(Color.ORANGE);
+        modeBox.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        modeBox.setFocusable(false);
+        modeBox.setBorder(BorderFactory.createLineBorder(Color.ORANGE, 2));
+
+
         JPanel centerPanel = new JPanel();
         centerPanel.setBackground(Color.BLACK);
         centerPanel.add(comboBox);
+        centerPanel.add(Box.createRigidArea(new Dimension(0, 20))); // spacing
+        centerPanel.add(modeBox);
         add(centerPanel, BorderLayout.CENTER);
+
 
         setVisible(true);
     }
@@ -55,6 +71,10 @@ public class SpeedSelector extends JFrame implements ActionListener {
             else if (option.contains("Fast")) GamePanel.DELAY = 25;
             else if (option.contains("Insane")) GamePanel.DELAY = 10;
         }
+
+        // Set game mode
+        String selectedMode = (String) modeBox.getSelectedItem();
+        GamePanel.MODE = selectedMode;
 
         new GameWindow();
         dispose();
