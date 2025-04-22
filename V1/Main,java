@@ -1,0 +1,103 @@
+// Project Root: tronlegacy/
+
+// Main.java
+package tronlegacy;
+
+import tronlegacy.ui.MainMenu;
+
+public class Main {
+    public static void main(String[] args) {
+        new MainMenu();
+    }
+}
+
+
+// tronlegacy/ui/MainMenu.java (was: mainMenu.java)
+package tronlegacy.ui;
+
+import tronlegacy.ui.SpeedSelector;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class MainMenu extends JFrame implements ActionListener {
+    private final JButton playButton = new JButton("Play");
+    private final JButton leaderboardButton = new JButton("Leaderboard");
+    private final JButton exitButton = new JButton("Exit");
+
+    public MainMenu() {
+        setTitle("Tron: Menu");
+        setSize(400, 100);
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLayout(new GridBagLayout());
+
+        addButton(playButton);
+        addButton(leaderboardButton);
+        addButton(exitButton);
+
+        setVisible(true);
+    }
+
+    private void addButton(JButton button) {
+        button.addActionListener(this);
+        add(button);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        Object source = e.getSource();
+        if (source == playButton) {
+            dispose();
+            new SpeedSelector();
+        } else if (source == exitButton) {
+            System.exit(0);
+        } else if (source == leaderboardButton) {
+            JOptionPane.showMessageDialog(this, "Leaderboard coming soon!");
+        }
+    }
+}
+
+
+// tronlegacy/ui/SpeedSelector.java (was: Speed.java)
+package tronlegacy.ui;
+
+import tronlegacy.ui.GameWindow;
+import tronlegacy.core.GamePanel;
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class SpeedSelector extends JFrame implements ActionListener {
+    private final JComboBox<String> comboBox;
+
+    public SpeedSelector() {
+        setTitle("Tron: Speed");
+        setSize(400, 100);
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        String[] options = {"Slow", "Normal", "Fast", "Insane"};
+        comboBox = new JComboBox<>(options);
+        comboBox.addActionListener(this);
+
+        add(comboBox);
+        setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String option = (String) comboBox.getSelectedItem();
+        switch (option) {
+            case "Slow" -> GamePanel.DELAY = 100;
+            case "Normal" -> GamePanel.DELAY = 50;
+            case "Fast" -> GamePanel.DELAY = 25;
+            case "Insane" -> GamePanel.DELAY = 10;
+        }
+        new GameWindow();
+        dispose();
+    }
+}
